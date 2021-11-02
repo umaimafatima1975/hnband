@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 880px;
+    margin: 0;
+    padding: 0;
+}
+.head{
+    display: block;
+    background-size:cover ;
+    background-position: top center;
+    width: 100%;
+    height: 960px;
+    position: relative;
+    background-image:  url(https://preview.colorlib.com/theme/hnband/img/hero-bg.png.webp);
+    background-repeat: no-repeat;
+    z-index: 50;
+    
+} 
+nav{
+    width: 100%;
+    position: relative;
+    background-color:transparent;
+    z-index: 6;
+}
+nav .main-menu{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 332px;
+}
+nav .main-menu li{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 15px;
+}
+nav .main-menu li a{
+    color:white;
+    text-decoration: none;
+    font-size: 9px;
+    text-transform: uppercase;
+    padding:6px 24px;
+}
+nav .main-menu li a.active{
+    border:2px solid ;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(50deg,#503aca 0%,#ea34ff 100%)
+}
+.drop-down {
+    display: none;
+}
+.drop-down-li{
+    display: block;
+}
+.hover-class{
+    position: relative;
+
+}
+.drop-down{
+    z-index: 90;
+    position: absolute;
+    left: 0;
+    background-color:black;
+    padding: 0;
+    margin: 0;
+}
+.drop-down-courses li{
+    z-index: 90;
+    padding: 0;
+}
+.drop-down li a{
+    color: white;
+    display: block;
+    white-space: nowrap;
+    padding: 0;
+     padding: 10px; 
+}
+.hover-class:hover .drop-down{
+    display: block;
+} 
+.menu-button{
+    font-size: 10px;
+    display: inline;
+    width: 10%;
+    height: 35px;
+    color: white;
+    background: linear-gradient(45deg,#503aca 0%,#ea34ff 100%);
+    text-transform: uppercase;
+}
+.menu-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .menu li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar .menu li .menu-a{
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+ .menu .bar{
+    float: right;
+    display: inline;
+    width: 24%;
+    height: 10px;
+    background-color:black;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 2px ; 
+ }
+.menu li .menu-a .bar-button{
+    color: white;
+    text-transform: uppercase;
+    height: 22px;
+    background-color:black;
+}
+
+.menu ul {
+    display: none;
+}
+.menu ul a{
+    display: block;
+}
+
+.menu ul{
+    position: relative;
+    left: 0;
+    list-style: none;
+    background-color:#4c4c4c; 
+    padding: 0;
+    margin: 0;
+}
+
+ .menu ul a{
+     font-size: 10px;
+     text-transform: uppercase;
+     color: white;
+     text-align: left;
+     text-decoration: none;
+     display: block;
+     white-space: nowrap;
+    padding: 0;
+    padding: 10px; 
+}
+.menu:hover ul{
+    /* color: grey; */
+    display: block;
+}
+.menu ul a:hover{
+    line-height: 100%;
+    background-color: grey;
+}
+.hero-text p{
+    margin-top: 7px;
+    font-size: 12px;
+    color: white;
+    margin-left: 40px;
+}
+.hero-text .hero-button a{
+    font-size: 12px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.brackets a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* laptop  */
+
+@media (min-width:768px){
+    header{
+        width: 100%;
+    }
+    .head{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        position: relative;
+        background-color:transparent;
+        z-index: 6;
+        margin: 0 60px;
+    }
+    .navbar .menu{
+        padding: 0;
+        margin: 0;
+        height: 29px;
+        background-color:#4c4c4c;
+        text-align: right;
+    }
+    .logo{
+        position: absolute;
+        width: 105px;
+        height: 50px;
+        display: inline;
+        padding-top: 7px;
+        left: 5px;
+    }
+    .logo-img{
+        width:100%;
+        height: 100%;
+    }
+    nav .main-menu{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-top: 30px;
+    }
+    nav .main-menu li a.active{
+        margin-left: 110px;
+    }
+    .navbar{
+        z-index: 3;
+        position: relative;
+        width: 86%;
+        margin-left: 53px;
+    }
+    .hero-text{
+        width: 40%;
+        height: 270px;
+        text-align: center;
+        background-color:transparent;
+        margin-top: 170px;
+        margin-left: 120px;
+        padding: 10px;
+    }
+    .hero-text span{
+        padding: 0;
+        margin-left: 1px;
+        margin-right:270px ;
+        color: white;
+        font-family: "satisfy",cursive;
+        font-size: 20px;
+    }
+    .hero-text h1{
+        margin-right: 25px;
+        margin-left: 0px;
+        display: inline;
+        text-transform: uppercase;
+        color: white;
+        font-size: 50px;
+    }
+    .hero-text p{
+        margin-top: 7px;
+        font-size: 19px;
+        text-align: center;
+        color: white;
+        margin-left: 61px;
+     }   
+     .hero-text .hero-button{
+        text-transform: uppercase;
+        display: inline;
+        width: 20%;
+        height: 30px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 75px;
+        margin-right: 310px;
+        color: white;
+        background: linear-gradient(45deg,#503aca 0%,#ea34ff 100%)
+    }
+    .hero-text .hero-button a{
+        font-size: 12px;
+        color: white;
+        font-family: sans-serif;
+        list-style: none;
+        text-decoration: none;
+    }
+    .hero-text .brackets{
+        margin-top: 52px;
+        margin-left: 79px;
+        width: 40%;
+        height: 50px;
+        display: block;
+       
+    }
+    .brackets .bracket{
+        font-size: 14px;
+    background-color: black;
+    color: white;
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    margin-left:10px;
+    padding: 0;
+    width:15%;
+    height: 32px;
+    border: 2px;
+    border-radius: 80%;
+    }
+    .brackets .bra-ket{
+        background-color: black;
+        font-size: 13px;
+        display: inline;
+        margin-top: 10px;
+        margin-right:130px;
+        padding: 0;
+        color: white;
+        width:15%;
+        height: 32px;
+        border: 2px;
+        border-radius: 80%;
+    }
+}
+
+
+
+/* mobile responsive */
+@media(max-width:768px){
+    header{
+        width: 100%;
+        height: 100vh;
+    }
+    .head{
+        width: 100%;
+        height: 100vh;
+    }
+    .logo{
+        width: 29%;
+        height: 31px;
+    }
+    .logo-img{
+        width:100%;
+        height: 100%;
+    }
+    nav{
+        padding: 13px;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar .menu{
+        padding: 0;
+        margin: 0 16px;
+        height: 29px;
+        background-color:#4c4c4c;
+        text-align: right;
+    }
+    nav .main-menu{
+        display: none;
+    }
+    .text-container{
+        padding: 0 19px;
+    }
+    .hero-text{
+        margin-top: 80px;
+        text-align: center;
+        color: white;
+    }
+    .hero-text span{
+        font-size: 18px;
+    }
+    .hero-text h1{
+        text-transform: uppercase;
+    font-size: 28px;
+    }
+
+    .hero-text p{
+        margin-top: 7px;
+        font-size: 12px;
+        color: white;
+        margin: 0;
+     }   
+    .hero-text .hero-button{
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        background: linear-gradient(45deg,#503aca 0%,#ea34ff 100%)
+    }
+    .hero-text .hero-button a{
+        font-size: 12px;
+        color: white;
+        font-family: sans-serif;
+        list-style: none;
+        text-decoration: none;
+    }
+    .hero-text .brackets{
+        display: flex;
+         justify-content: center;
+         margin-top: 16px;
+       
+    }
+    .brackets .bracket{
+        width: 29px;
+        height: 29px;
+        border: 50%;
+        
+        border-radius: 50%;
+        background: black;
+        font-size: 10px;
+        margin-right: 10px;
+        border: none;
+    }
+    .brackets .bra-ket{
+        width: 29px;
+        height: 29px;
+        border: none;
+        
+        border-radius: 50%;
+        background: black;
+        font-size: 10px;
+    }
+}
